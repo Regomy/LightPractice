@@ -1,0 +1,11 @@
+name: LightPractice
+version: 1.0
+author: Rejomy
+
+commands:
+  lightpractice:
+    aliases:
+      - lpractice
+      - practice
+
+main: me.rejomy.lightpractice.LightPractice

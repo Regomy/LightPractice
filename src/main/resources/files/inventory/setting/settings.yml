@@ -1,0 +1,59 @@
+# The name of the inventory header.
+title: "Personalize settings:"
+
+# How much more rows we should create.
+# Minimum rows: 1 (9 slots), maximum 6 (9 * 6 = 54 slots).
+# For example small chest has 3 rows, player inventory 4 rows.
+rows: 3
+
+# Under which commands on behalf of the player should we open this menu.
+commands:
+  practice settings
+
+# Here you can customize this gui.
+# You can create your own gui if you want, why not? ¯\_(ツ)_/¯
+#
+# So... in the menu you can:
+# 1) cell(x) / row(y) : it is positions where an item will be placed.
+#  be careful! Min cell is one, max is nine. There is nine cells in row.
+#   Max row is your rows amount, min row is one.
+#    For example: if you know what is slot, 25 slot is equals second row and seventh cell.
+# 2) name : It is an item name, same with Diamond Sword or anything item in your inventory.
+# 3) lore : It is an item description, writes below name, can be multilines.
+# 4) material : It is an item type, GOLDEN_APPLE, DIAMOND_SWORD or anything mc item.
+# 5) commands : It is a set of commands executed when someone is clicking on an item.
+#
+# This gui is support & color codes and hex colors (hex only for 1.16.5 and largest).
+# This gui is support PlaceholderAPI too, you can use %placeholder% at this gui.
+
+# Custom actions: It is actions which you can perform in this menu.
+#  (!) All of this expressions is case insensitive. For example: [SOUND] [sound] it is equals.
+# [SOUND] sound_name - play sound for a player.
+# [CLOSE] - close this gui for a player.
+# [OPEN] gui_name - open any other menu of this plugin. For example: [OPEN] soup_configurable
+#
+#
+items:
+  - cell: 3
+    row: 2
+    name: "&9Multi Languages"
+    lore:
+      - "&f Disable/Enable automatically - "
+      - "&f  translations to your mc language."
+      - ""
+    material: BOOK
+    commands:
+      - "lightpractice multilang disable %player_name%"
+      - "[sound] CLICK"
+
+  - cell: 3
+    row: 2
+    name: "&9Reset"
+    lore:
+      - "&f Disable/Enable automatically - "
+      - "&f  translations to your mc language."
+      - ""
+    material: CLOCK
+    commands:
+      - "lightpractice resetsettings %player_name%"
+      - "[sound] CLICK"

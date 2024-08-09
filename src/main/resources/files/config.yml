@@ -1,0 +1,18 @@
+# ฅ^•ﻌ•^ฅ Hello! You are welcome to LightPractice Config!
+# Thanks you for downloading my plugin.
+# If you have any question you can asks me in my discord: rejomy
+#
+# Leave a review for a cookie, Have a good day :3
+# The server from where i was inspired by the plugin: tech-noob.com
+#
+# Setup guide:
+# link to my youtube channel video
+
+settings:
+  # Should we will hide everyone who dont played at the same game with us.
+  # We will use: #hidePlayer function in bukkit api.
+  hide-exactly-same-game: true
+
+  # Should we use specific language file for player minecraft language
+  multi-language: true
+
