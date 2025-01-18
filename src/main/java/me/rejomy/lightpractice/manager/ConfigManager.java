@@ -1,4 +1,4 @@
-package me.rejomy.lightpractice.config;
+package me.rejomy.lightpractice.manager;
 
 import lombok.Getter;
 import me.rejomy.lightpractice.PracticeAPI;

@@ -43,15 +43,14 @@ items:
       - ""
     material: BOOK
     commands:
-      - "lightpractice multilang disable %player_name%"
+      - "lightpractice multilang toggle %player_name%"
       - "[sound] CLICK"
 
   - cell: 3
     row: 2
     name: "&9Reset"
     lore:
-      - "&f Disable/Enable automatically - "
-      - "&f  translations to your mc language."
+      - "&f Reset all settings to default here "
       - ""
     material: CLOCK
     commands:
